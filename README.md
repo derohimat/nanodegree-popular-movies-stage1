@@ -22,7 +22,7 @@ Udacity Nanodegree Popular Movies Stage 1. This app I made with MVP Architecture
     Just change API_KEY from [MovieDB](https://www.themoviedb.org) in Constant.java 
     
 # Used Library from :
-  - [Android Base MVP](https://github.com/derohimat/android-base-mvp/)
+  - [Android Base MVP](https://derohimat.github.io/android-base-mvp/)
   - [Retrofit 2](http://square.github.io/retrofit/)
   - [OkHTTP 3](http://square.github.io/okhttp/)
   - [RXJava](https://github.com/ReactiveX/RxJava)
