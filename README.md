@@ -2,12 +2,14 @@
 
 Udacity Nanodegree Popular Movies Stage 1. This app I made with MVP Architecture from [Android Base MVP](https://github.com/derohimat/android-base-mvp/)
 
-##Feature
+# Feature
    - Show Movies by Popular and High Rated
    - Show Movies Description
 
-#How to Use
-    Just change API_KEY from [MovieDB](https://www.themoviedb.org) in Constant.java 
+# Screenshots
+<img src="https://github.com/derohimat/nanodegree-popular-movies-stage1/blob/master/home.png" width="300">
+<img src="https://github.com/derohimat/nanodegree-popular-movies-stage1/blob/master/home-sort.png" width="300">
+<img src="https://github.com/derohimat/nanodegree-popular-movies-stage1/blob/master/detail.png" width="300">
 
 # Requirements :
 	Min SDK Version 15
@@ -16,6 +18,9 @@ Udacity Nanodegree Popular Movies Stage 1. This app I made with MVP Architecture
 	Build Tools Version 24.0.3
 	Java 1.8
 	
+# How to Use
+    Just change API_KEY from [MovieDB](https://www.themoviedb.org) in Constant.java 
+    
 # Used Library from :
   - [Android Base MVP](https://github.com/derohimat/android-base-mvp/)
   - [Retrofit 2](http://square.github.io/retrofit/)
