@@ -15,13 +15,14 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
 
 public interface APIService {
 
-    @GET("discover/movie")
-    Observable<DiscoverMovieApiDao> discoverMovie(@Query("api_key") String apiKey, @Query("sort_by") String sortBy);
+    @GET("movie/{sort_by}")
+    Observable<DiscoverMovieApiDao> discoverMovie(@Path("sort_by") String sortBy, @Query("api_key") String apiKey);
 
     class Factory {
 

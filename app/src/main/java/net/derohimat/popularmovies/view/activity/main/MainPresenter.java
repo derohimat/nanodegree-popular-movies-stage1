@@ -54,7 +54,7 @@ public class MainPresenter implements BasePresenter<MainMvpView> {
 
         BaseApplication baseApplication = BaseApplication.get(mMainMvpView.getContext());
 
-        mSubscription = mAPIService.discoverMovie(Constant.MOVIEDB_APIKEY, sortBy)
+        mSubscription = mAPIService.discoverMovie(sortBy, Constant.MOVIEDB_APIKEY)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(baseApplication.getSubscribeScheduler())
                 .subscribe(new Subscriber<DiscoverMovieApiDao>() {
