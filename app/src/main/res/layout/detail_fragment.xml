@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/app_window_bglight_color"
-            android:fillViewport="true">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_window_bglight_color"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,11 +30,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <net.derohimat.baseapp.ui.view.BaseImageView
                     android:id="@+id/iv_poster"
-                    android:layout_width="80dp"
+                    android:layout_width="@dimen/size_img_poster"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:src="@color/Gray"/>
@@ -47,22 +50,22 @@
                         android:id="@+id/tv_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Title"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        tools:text="@string/title"/>
 
                     <TextView
                         android:id="@+id/tv_releasedate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Release date - xxx minutes"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        tools:text="@string/dummy_release_date"/>
 
                     <TextView
                         android:id="@+id/tv_voteavg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="x.x/10"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        tools:text="@string/dummy_rate"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -72,8 +75,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_double"
-                android:text="Lorem ipsum dolor sit amet."/>
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                tools:text="@string/lorem_ipsum"/>
 
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+</android.support.v4.widget.NestedScrollView>

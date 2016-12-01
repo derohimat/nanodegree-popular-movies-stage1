@@ -183,6 +183,9 @@ public class MainActivity extends AppBaseActivity implements MainMvpView {
     @Override
     public void showDiscoverMovie(DiscoverMovieApiDao data) {
         mRecyclerView.refreshComplete();
+        if (!mAdapter.getDatas().isEmpty()) {
+            mAdapter.clear();
+        }
         mAdapter.addAll(data.getResults());
     }
 

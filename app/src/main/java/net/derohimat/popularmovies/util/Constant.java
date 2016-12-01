@@ -1,8 +1,8 @@
 package net.derohimat.popularmovies.util;
 
 public class Constant {
-    public final static String SORT_POPULAR = "popularity.desc";
-    public final static String SORT_HIGHEST_RATED = "vote_average.desc";
+    public final static String SORT_POPULAR = "popular";
+    public final static String SORT_HIGHEST_RATED = "top_rated";
 
     //TODO INSERT APIKEY
     public final static String MOVIEDB_APIKEY = "ADD YOU API KEY HERE";
