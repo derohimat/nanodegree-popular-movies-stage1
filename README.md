@@ -2,6 +2,14 @@
 
 Udacity Nanodegree Popular Movies Stage 1. This app I made with MVP Architecture from [Android Base MVP](https://github.com/derohimat/android-base-mvp/)
 
+## Udacity Reviews
+	**Meets Specifications**
+	
+	Awesome! :+1:
+
+	Congrats! You fixed the issues I pointed out in the previous review! Your hard work has paid off! 
+	Keep up the good work as you continue your Nanodegree journey! Safe journey and bon voyage! :smile:
+
 # Feature
    - Show Movies by Popular and High Rated
    - Show Movies Description
